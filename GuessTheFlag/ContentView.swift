@@ -15,13 +15,14 @@ struct ContentView: View {
     @State private var varshowingScore = false
     var body: some View {
         ZStack{
-            Color.blue
-                .edgesIgnoringSafeArea(.all)
+            LinearGradient(gradient: Gradient(colors: [.blue,.black]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
             VStack(spacing: 30){
                 VStack {
                     Text("Pick flag of country")
                         .foregroundColor(.white)
                     Text(countries[correctCountryIndex])
+                        .font(.largeTitle)
+                        .fontWeight(.black)
                         .foregroundColor(.white)
                 }
                 
@@ -29,7 +30,12 @@ struct ContentView: View {
                     Button(action: {
                         self.flagSelected(number)
                     }){
-                        Image(self.countries[number]).renderingMode(.original)
+                        Image(self.countries[number])
+                            .renderingMode(.original)
+                            .clipShape(RoundedRectangle(cornerRadius: 15))
+                            .overlay(RoundedRectangle(cornerRadius: 15)
+                                .stroke(Color.black, lineWidth: 1))
+                            .shadow(color: Color.black, radius: 2)
                     }
                     
                 }
