@@ -9,13 +9,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
+    
+    @State private var countries = ["India","Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
+    
     @State private var correctCountryIndex = Int.random(in: 0...2)
     @State private var scoreTitle = ""
     @State private var varshowingScore = false
+    @State private var score = "0"
+    @State private var errorMessage = ""
+    
     var body: some View {
         ZStack{
-            LinearGradient(gradient: Gradient(colors: [.blue,.black]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
+            LinearGradient(gradient: Gradient(colors: [.orange,.white,.green]), startPoint: .topLeading, endPoint: .bottom).edgesIgnoringSafeArea(.all)
+            
             VStack(spacing: 30){
                 VStack {
                     Text("Pick flag of country")
@@ -37,13 +43,12 @@ struct ContentView: View {
                                 .stroke(Color.black, lineWidth: 1))
                             .shadow(color: Color.black, radius: 2)
                     }
-                    
                 }
                 
                 Spacer()
             }
         }.alert(isPresented: $varshowingScore) {
-            Alert(title: Text(scoreTitle), message: Text("Your score is ???"), dismissButton: .default(Text("Continue"), action: {
+            Alert(title: Text(scoreTitle), message: Text("Your score is \(score).\n\(errorMessage.isEmpty ? "" : errorMessage)."), dismissButton: .default(Text("Continue"), action: {
                 self.askQuestion()
             }))
         }
@@ -52,8 +57,12 @@ struct ContentView: View {
     func flagSelected(_ number: Int){
         if number == correctCountryIndex{
             self.scoreTitle = "Correct"
+            let currentScore = Int(score) ?? 0
+            score = "\(currentScore+1)"
+            errorMessage = ""
         }else{
-            self.scoreTitle = "Worng"
+            self.scoreTitle = "Wrong"
+            errorMessage = "Wrong! That’s the flag of \(countries[number])"
         }
         
         self.varshowingScore = true
