@@ -15,6 +15,7 @@
 		830A15622365B99D002B405A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830A15602365B99D002B405A /* LaunchScreen.storyboard */; };
 		830A156D2365B99E002B405A /* GuessTheFlagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A156C2365B99E002B405A /* GuessTheFlagTests.swift */; };
 		830A15782365B99E002B405A /* GuessTheFlagUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A15772365B99E002B405A /* GuessTheFlagUITests.swift */; };
+		830A15862365BF40002B405A /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 830A15852365BF3F002B405A /* readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		830A15732365B99E002B405A /* GuessTheFlagUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessTheFlagUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		830A15772365B99E002B405A /* GuessTheFlagUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagUITests.swift; sourceTree = "<group>"; };
 		830A15792365B99E002B405A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830A15852365BF3F002B405A /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		830A15492365B999002B405A = {
 			isa = PBXGroup;
 			children = (
+				830A15852365BF3F002B405A /* readme.md */,
 				830A15542365B999002B405A /* GuessTheFlag */,
 				830A156B2365B99E002B405A /* GuessTheFlagTests */,
 				830A15762365B99E002B405A /* GuessTheFlagUITests */,
@@ -242,6 +245,7 @@
 			files = (
 				830A15622365B99D002B405A /* LaunchScreen.storyboard in Resources */,
 				830A155F2365B99D002B405A /* Preview Assets.xcassets in Resources */,
+				830A15862365BF40002B405A /* readme.md in Resources */,
 				830A155C2365B99D002B405A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
