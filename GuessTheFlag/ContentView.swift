@@ -36,12 +36,7 @@ struct ContentView: View {
                     Button(action: {
                         self.flagSelected(number)
                     }){
-                        Image(self.countries[number])
-                            .renderingMode(.original)
-                            .clipShape(RoundedRectangle(cornerRadius: 15))
-                            .overlay(RoundedRectangle(cornerRadius: 15)
-                                .stroke(Color.black, lineWidth: 1))
-                            .shadow(color: Color.black, radius: 2)
+                        FlagImage(self.countries[number])
                     }
                 }
                 
