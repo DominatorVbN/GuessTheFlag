@@ -11,6 +11,6 @@ It's a quiz game to select correct flag image from the given options.
 4. [GeometryEffect](https://developer.apple.com/documentation/swiftui/geometryeffect) to create shake animation
 5. Animating multiple properties using [AnimatableData](https://developer.apple.com/documentation/swiftui/animatable/3046497-animatabledata)
 6. Created 3d rotation animation using [rotation3DEffect](https://www.hackingwithswift.com/quick-start/swiftui/how-to-rotate-a-view-in-3d)
-7. Animation ovveriding
+7. Animation overriding
 
 ![](GuessTheFlag.gif)
