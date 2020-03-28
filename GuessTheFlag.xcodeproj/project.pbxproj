@@ -52,6 +52,7 @@
 		830A15772365B99E002B405A /* GuessTheFlagUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagUITests.swift; sourceTree = "<group>"; };
 		830A15792365B99E002B405A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		830A15852365BF3F002B405A /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		838695BA23742E6A0057211C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		83CA2AC423689F10005D19BC /* FlagImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +108,7 @@
 				830A15552365B999002B405A /* AppDelegate.swift */,
 				830A15572365B999002B405A /* SceneDelegate.swift */,
 				830A15592365B999002B405A /* ContentView.swift */,
+				838695BA23742E6A0057211C /* README.md */,
 				830A155B2365B99D002B405A /* Assets.xcassets */,
 				830A15602365B99D002B405A /* LaunchScreen.storyboard */,
 				830A15632365B99D002B405A /* Info.plist */,
